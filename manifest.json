@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "name": "GitHub Absolute Time Extension",
+  "manifest_version": 3,
+  "description": "GitHub の相対時間表示を絶対時間に変換する Chrome 拡張",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
